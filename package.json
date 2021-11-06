@@ -1,0 +1,28 @@
+{
+  "name": "architecture-mock-server",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^7.2.4",
+    "ajv-formats": "^1.6.1",
+    "fastify": "^3.23.0",
+    "fastify-response-validation": "^0.2.0",
+    "fastify-swagger": "^4.12.6",
+    "random-profile-generator": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-nodejs": "0.0.1",
+    "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-security": "^1.4.0"
+  }
+}
