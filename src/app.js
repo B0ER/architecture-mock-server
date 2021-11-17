@@ -1,7 +1,8 @@
 import fastify from 'fastify';
 import fastifyResponseValidation from 'fastify-response-validation';
 import { ajv } from './libs/ajv';
-import { endpointRouter } from './modules/endpoint.router.js';
+import { endpointRouter } from './api';
+import { graphQLRouter } from './graphql';
 import { registerFastifySwagger } from './libs/fastify-swagger';
 
 
@@ -20,6 +21,7 @@ const startServer = async () => {
   server.setValidatorCompiler(({ schema }) => ajv.compile(schema));
 
   server.register(endpointRouter);
+  server.register(graphQLRouter);
   await server.listen({ port: PORT, host: '0.0.0.0' });
 
   server.ready(() => {

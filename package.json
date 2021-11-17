@@ -17,6 +17,8 @@
     "fastify": "^3.23.0",
     "fastify-response-validation": "^0.2.0",
     "fastify-swagger": "^4.12.6",
+    "graphql": "^15.7.2",
+    "mercurius": "^8.8.0",
     "random-profile-generator": "^2.3.0"
   },
   "devDependencies": {
