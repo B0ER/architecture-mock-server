@@ -48,11 +48,7 @@ export const userRouter = async (server, options) => {
       schema: {
         params: { type: 'object', properties: { userId: { type: 'string' } } },
         response: {
-          200: {
-            type: 'object',
-            properties: {
-            }
-          }
+          200: userItemOutputSchema,
         }
       }
     },
